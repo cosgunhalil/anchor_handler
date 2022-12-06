@@ -55,6 +55,22 @@ namespace VoxelPixel.Unity.UIUtils
             currentTransform.offsetMax = newOffset;
         }
 
+        [MenuItem("AnchorHandler/Center to Anchors")]
+        static void AnchorsToCenter()
+        {
+            foreach (Transform transform in Selection.transforms)
+            {
+                RectTransform currentTransform = transform.GetComponent<RectTransform>();
+
+                if (currentTransform == null)
+                {
+                    return;
+                }
+
+                currentTransform.anchoredPosition = new Vector2(0,0);
+            }
+        }
+
 #endif
     }
 }
