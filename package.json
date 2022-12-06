@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"displayName": "VoxelPixel Anchor Handler",
 	"description": "Manage the anchors easily!",
-	"unity": "2021.3.11f1",
+	"unity": "2021.3",
 	"author":{
 		"name": "Halil Cosgun",
 		"email": "cosgun.halil@gmail.com",
