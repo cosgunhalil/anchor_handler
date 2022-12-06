@@ -56,7 +56,7 @@ namespace VoxelPixel.Unity.UIUtils
         }
 
         [MenuItem("AnchorHandler/Center to Anchors")]
-        static void AnchorsToCenter()
+        static void CenterToAnchors()
         {
             foreach (Transform transform in Selection.transforms)
             {
@@ -68,6 +68,22 @@ namespace VoxelPixel.Unity.UIUtils
                 }
 
                 currentTransform.anchoredPosition = new Vector2(0,0);
+            }
+        }
+
+        [MenuItem("AnchorHandler/Anchors to Center")]
+        static void AnchorsToCenter()
+        {
+            foreach (Transform transform in Selection.transforms)
+            {
+                RectTransform currentTransform = transform.GetComponent<RectTransform>();
+
+                if (currentTransform == null)
+                {
+                    return;
+                }
+
+                //TODO: add functionality
             }
         }
 
