@@ -3,7 +3,7 @@ namespace VoxelPixel.Unity.UIUtils
     using UnityEditor;
     using UnityEngine;
 
-    public class AnchorHandler : MonoBehaviour
+    public class AnchorHandler
     {
 #if UNITY_EDITOR
         [MenuItem("AnchorHandler/Anchors to Corners")]
